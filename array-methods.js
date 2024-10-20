@@ -17,8 +17,27 @@ const colors = products.map((product) => product.color);
 
 // forEach
 
-products.forEach((product) => console.log(product));
-products.forEach((product) => console.log(product.color));
-products.forEach((product) => console.log(product.name));
-products.forEach((product) => console.log(product.brand));
-products.forEach((product) => console.log(product.price));
+// products.forEach((product) => console.log(product));
+// products.forEach((product) => console.log(product.color));
+// products.forEach((product) => console.log(product.name));
+// products.forEach((product) => console.log(product.brand));
+// products.forEach((product) => console.log(product.price));
+
+// filter
+const cheap = products.filter((product) => product.price < 5000);
+// console.log(cheap);
+
+const specificName = products.filter((product) => product.name.includes("n"));
+// console.log(specificName);
+
+const name = products.filter((product) => product.name.includes("p"));
+// console.log(name);
+const findS = products.filter((product) => product.name.includes("s"));
+// console.log(findS);
+
+// find
+const findN = products.find((product) => product.name.includes("n"));
+console.log(findN);
+
+const findP = products.find((product) => product.name.includes("p"));
+console.log(findP);
